@@ -1,0 +1,28 @@
+.Resume {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25%;
+    grid-template-rows: 20%;
+    grid-template-areas:
+        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel"
+        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel"
+        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel"
+        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel"
+        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel";
+}
+
+.ResumeLeftPanel {
+    grid-area: ResumeLeftPanel;
+}
+
+.ResumeMiddleLeft {
+    grid-area: ResumeMiddleLeft;
+}
+
+.ResumeMiddleRight {
+    grid-area: ResumeMiddleRight;
+}
+
+.ResumeRightPanel {
+    grid-area: ResumeRightPanel;
+}
