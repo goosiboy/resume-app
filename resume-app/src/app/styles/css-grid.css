@@ -3,8 +3,8 @@
   .App {
     height: 100vh;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 0.1fr 1fr 0.07fr;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-rows: 1fr min-content 1fr;
     grid-template-areas:
       "Header Header Header"
       "SidebarLeft Main SidebarRight"
@@ -33,6 +33,11 @@
     grid-area: Main;
     grid-column-start: auto;
     grid-column-end: auto;
+    min-width: 19cm;
+    min-height: 27cm;
+
+    max-width: 21cm;
+    max-height: 29.7cm;
   }
 
   .Footer {

@@ -1,28 +1,92 @@
 .Resume {
     height: 100%;
     display: grid;
-    grid-template-columns: 25%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 20%;
     grid-template-areas:
-        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel"
-        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel"
-        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel"
-        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel"
-        "ResumeLeftPanel ResumeMiddleLeft ResumeMiddleRight ResumeRightPanel";
+        "resumeLeftContainer-1 resumeRightContainer-1"
+        "resumeLeftContainer-2 resumeRightContainer-2"
+        "resumeLeftContainer-3 resumeRightContainer-3"
+        "resumeLeftContainer-4 resumeRightContainer-4"
+        "resumeLeftContainer-5 resumeRightContainer-5";
 }
 
-.ResumeLeftPanel {
-    grid-area: ResumeLeftPanel;
+.resumeLeftContainer-1 {
+    grid-area: resumeLeftContainer-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.ResumeMiddleLeft {
-    grid-area: ResumeMiddleLeft;
+.resumeRightContainer-1 {
+    grid-area: resumeRightContainer-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.ResumeMiddleRight {
-    grid-area: ResumeMiddleRight;
+.resumeLeftContainer-2 {
+    grid-area: resumeLeftContainer-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.ResumeRightPanel {
-    grid-area: ResumeRightPanel;
+.resumeRightContainer-2 {
+    grid-area: resumeRightContainer-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resumeLeftContainer-3 {
+    grid-area: resumeLeftContainer-3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resumeRightContainer-3 {
+    grid-area: resumeRightContainer-3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resumeLeftContainer-4 {
+    grid-area: resumeLeftContainer-4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resumeRightContainer-4 {
+    grid-area: resumeRightContainer-4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resumeLeftContainer-5 {
+    grid-area: resumeLeftContainer-5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resumeRightContainer-5 {
+    grid-area: resumeRightContainer-5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
