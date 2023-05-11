@@ -1,6 +1,7 @@
 import './styles/css-reset.css'
 import './styles/css-grid.css'
 import './styles/globals.css'
+import './styles/variables.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })

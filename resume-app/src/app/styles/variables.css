@@ -1,0 +1,8 @@
+:root {
+    --content-margin-from-edge: 3rem;
+    --default-font-color: rgb(46, 46, 46);
+    --default-text-size: 1rem;
+    --default-main-title-size: 2.5rem;
+    --default-secondary-title-size: 1.3rem;
+    --default-font-size: 1rem;
+}
