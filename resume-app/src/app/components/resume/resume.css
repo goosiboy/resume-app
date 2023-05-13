@@ -5,8 +5,20 @@
 
 .secondTitle {
     font-size: var(--default-secondary-title-size);
-    color: rgb(99, 99, 99);
+    color: var(--default-grey-font-color);
     margin-top: 2.8rem;
 }
 
-.links {}
+.contactInfoContainer {
+    color: var(--default-grey-font-color);
+}
+
+.skillsContainer {
+    margin-left: var(--content-margin-from-edge);
+}
+
+.skillsHeader {
+    color: rgb(255, 123, 0);
+    font-weight: bolder;
+    font-size: var(--default-third-title-size);
+}

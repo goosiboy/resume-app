@@ -9,6 +9,7 @@
         "resumeLeftContainer-3 resumeRightContainer-3"
         "resumeLeftContainer-4 resumeRightContainer-4"
         "resumeLeftContainer-5 resumeRightContainer-5";
+    box-shadow: 5px 5px 5px #c9c9c9;
 }
 
 .resumeLeftContainer-1 {
@@ -17,25 +18,25 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: var(--resume-grid-gap-size);
 }
 
 .resumeRightContainer-1 {
     grid-area: resumeRightContainer-1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
-    gap: 10px;
+    gap: var(--resume-grid-gap-size);
 }
 
 .resumeLeftContainer-2 {
     grid-area: resumeLeftContainer-2;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--resume-grid-gap-size);
 }
 
 .resumeRightContainer-2 {
@@ -44,7 +45,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: var(--resume-grid-gap-size);
 }
 
 .resumeLeftContainer-3 {
@@ -53,7 +54,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: var(--resume-grid-gap-size);
 }
 
 .resumeRightContainer-3 {
@@ -62,7 +63,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: var(--resume-grid-gap-size);
 }
 
 .resumeLeftContainer-4 {
@@ -71,7 +72,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: var(--resume-grid-gap-size);
 }
 
 .resumeRightContainer-4 {
@@ -80,7 +81,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: var(--resume-grid-gap-size);
 }
 
 .resumeLeftContainer-5 {
@@ -89,7 +90,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: var(--resume-grid-gap-size);
 }
 
 .resumeRightContainer-5 {
@@ -98,5 +99,5 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: var(--resume-grid-gap-size);
 }

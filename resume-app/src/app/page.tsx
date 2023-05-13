@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <>
       <Header />
-      <SidebarRight />
+      <SidebarLeft />
       <div className="Main">
         <Resume />
       </div>
-      <SidebarLeft />
+      <SidebarRight />
       <Footer />
     </>
   )

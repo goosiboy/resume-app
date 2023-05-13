@@ -2,3 +2,11 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: var(--default-font-size);
 }
+
+a:link {
+  color: var(--default-grey-font-color);
+}
+
+a:visited {
+  color: var(--default-grey-font-color);
+}

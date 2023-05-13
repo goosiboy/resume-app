@@ -1,8 +1,12 @@
 :root {
     --content-margin-from-edge: 3rem;
     --default-font-color: rgb(46, 46, 46);
-    --default-text-size: 1rem;
+    --default-grey-font-color: rgb(99, 99, 99);
+
     --default-main-title-size: 2.5rem;
-    --default-secondary-title-size: 1.3rem;
+    --default-secondary-title-size: 1.1rem;
+    --default-third-title-size: 0.9rem;
     --default-font-size: 1rem;
+
+    --resume-grid-gap-size: 10px;
 }
