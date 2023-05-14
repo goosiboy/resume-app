@@ -1,7 +1,42 @@
 import './resume-grid.css';
 import './resume.css';
+import { useState } from 'react';
 
-export default function Resume() {
+const Resume = () => {
+
+    function ContactInfoContainer() {
+
+        const [contactInfo, setContactInfo] = useState({
+            email: "jonyoinas@gmail.com",
+            phone: "(+358) 44 2000 189"
+        });
+
+        return (
+            <div className="contactInfoContainer">
+                <div className="links">
+                    <p><a href="https://github.com/oinasjo">github.com/oinasjo</a></p>
+                    <p><a href="https://bitbucket.org/Supersofty">bitbucket.org/Supersofty</a></p>
+                    <p><a href="https://www.linkedin.com/in/jonyoinas/">linkedin.com/in/jonyoinas</a></p>
+                </div>
+                <div className="contactInfo">
+                    <p>state.email</p>
+                    <p>state.phone</p>
+                </div>
+            </div>
+        );
+    }
+
+    function SkillsContainer() {
+        return (
+            <div className="skillsContainer">
+                <h2 className="skillsHeader">SKILLS</h2>
+                <br />
+                <h3 className="developmentHeader">Development</h3>
+                <p>Java</p>
+            </div>
+        );
+    }
+
     return (
         <div className="resume">
             <div className="resumeLeftContainer-1">
@@ -9,22 +44,10 @@ export default function Resume() {
                 <h3 className="secondTitle">Full-Stack <br /> Developer</h3>
             </div>
             <div className="resumeRightContainer-1">
-                <div className="contactInfoContainer">
-                    <p><a href="https://github.com/oinasjo">github.com/oinasjo</a></p>
-                    <p><a href="https://bitbucket.org/Supersofty">bitbucket.org/Supersofty</a></p>
-                    <p><a href="https://www.linkedin.com/in/jonyoinas/">linkedin.com/in/jonyoinas</a></p>
-                    <br />
-                    <p>jonyoinas@gmail.com</p>
-                    <p>contact (+358) 44 2000 189</p>
-                </div>
+                <ContactInfoContainer />
             </div>
             <div className="resumeLeftContainer-2">
-                <div className="skillsContainer">
-                    <h2 className="skillsHeader">SKILLS</h2>
-                    <br />
-                    <h3>Development</h3>
-                    <p>Java</p>
-                </div>
+                <SkillsContainer />
             </div>
             <div className="resumeRightContainer-2" />
             <div className="resumeLeftContainer-3" />
@@ -36,3 +59,5 @@ export default function Resume() {
         </div>
     )
 }
+
+export default Resume;

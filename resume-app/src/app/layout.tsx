@@ -2,14 +2,19 @@ import './styles/css-reset.css'
 import './styles/css-grid.css'
 import './styles/globals.css'
 import './styles/variables.css'
+import { StrictMode } from 'react'
 import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata = {
-  title: 'oinasjo resume app',
-  description: 'oinasjo resume app',
+  title: 'Resume',
+  description: 'Resume app',
 }
+
+// Self-hosted fonts
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter"
+});
 
 export default function RootLayout({
   children,
@@ -18,7 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="App">{children}</body>
+      <StrictMode>
+        <body className="App">{children}</body>
+      </StrictMode>
     </html>
   )
 }

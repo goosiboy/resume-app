@@ -5,6 +5,7 @@ import SidebarLeft from './components/sidebar/sidebarLeft';
 import Footer from './components/footer/footer';
 
 export default function Home() {
+
   return (
     <>
       <Header />

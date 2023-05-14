@@ -22,3 +22,8 @@
     font-weight: bolder;
     font-size: var(--default-third-title-size);
 }
+
+.developmentHeader {
+    font-weight: bolder;
+    font-size: var(--default-third-title-size);
+}

@@ -5,8 +5,10 @@
 
     --default-main-title-size: 2.5rem;
     --default-secondary-title-size: 1.1rem;
-    --default-third-title-size: 0.9rem;
+    --default-third-title-size: 1rem;
     --default-font-size: 1rem;
+
+    --default-row-spacing: 0.3rem;
 
     --resume-grid-gap-size: 10px;
 }
