@@ -33,11 +33,8 @@
     grid-area: Main;
     grid-column-start: auto;
     grid-column-end: auto;
-    min-width: 19cm;
-    min-height: 27cm;
-
-    max-width: 21cm;
-    max-height: 29.7cm;
+    width: 21cm;
+    height: 29.7cm;
   }
 
   .Footer {

@@ -5,12 +5,6 @@ import { useState } from 'react';
 const Resume = () => {
 
     function ContactInfoContainer() {
-
-        const [contactInfo, setContactInfo] = useState({
-            email: "jonyoinas@gmail.com",
-            phone: "(+358) 44 2000 189"
-        });
-
         return (
             <div className="contactInfoContainer">
                 <div className="links">
@@ -19,8 +13,8 @@ const Resume = () => {
                     <p><a href="https://www.linkedin.com/in/jonyoinas/">linkedin.com/in/jonyoinas</a></p>
                 </div>
                 <div className="contactInfo">
-                    <p>state.email</p>
-                    <p>state.phone</p>
+                    <p>jonyoinas@gmail.com</p>
+                    <p>(+358) 44 2000 189</p>
                 </div>
             </div>
         );
@@ -30,9 +24,23 @@ const Resume = () => {
         return (
             <div className="skillsContainer">
                 <h2 className="skillsHeader">SKILLS</h2>
-                <br />
                 <h3 className="developmentHeader">Development</h3>
-                <p>Java</p>
+                <p className="developmentContentContainer">
+                    Java, Javascript,  Maven,
+                    Node & npm, git, Spring (boot),
+                    Typescript, React, CI/CD - tools,
+                    (Jenkins, Tekton, Bitbucket pipelines),
+                    Docker, Openshift
+                </p>
+                <p className="developmentContentContainer">
+                    Test driven development and agile working methods.
+                </p>
+                <p className="developmentContentContainer">
+                    Used to working in large multilingual and multicultural teams.
+                </p>
+                <p className="developmentContentContainer">
+                    Communication : Backlog facilitation · Clear communication · Leading teams · Self starter · Cooperative supporter
+                </p>
             </div>
         );
     }
