@@ -1,65 +1,35 @@
 import './resume-grid.css';
 import './resume.css';
-import { useState } from 'react';
+import ContactInfoContainer from './ContactInfoContainer';
+import SkillsContainer from './SkillsContainer';
+import WorkExperience from './experience/WorkExperienceTable';
+import WorkExperienceCell from './experience/WorkExperienceCell';
+import ResumeHeader from './ResumeHeader';
 
 const Resume = () => {
 
-    function ContactInfoContainer() {
-        return (
-            <div className="contactInfoContainer">
-                <div className="links">
-                    <p><a href="https://github.com/oinasjo">github.com/oinasjo</a></p>
-                    <p><a href="https://bitbucket.org/Supersofty">bitbucket.org/Supersofty</a></p>
-                    <p><a href="https://www.linkedin.com/in/jonyoinas/">linkedin.com/in/jonyoinas</a></p>
-                </div>
-                <br />
-                <div className="contactInfo">
-                    <p>jonyoinas@gmail.com</p>
-                    <p>(+358) 44 2000 189</p>
-                </div>
-            </div>
-        );
-    }
+    function buildWorkExperienceCells() {
+        const cells = [] as JSX.Element[];
 
-    function SkillsContainer() {
-        return (
-            <div className="skillsContainer">
-                <h2 className="skillsHeader">SKILLS</h2>
-                <br />
-                <h3 className="developmentHeader">Development</h3>
-                <p className="developmentContentContainer">
-                    Java, Javascript,  Maven,
-                    Node & npm, git, Spring (boot),
-                    Typescript, React, CI/CD - tools,
-                    (Jenkins, Tekton, Bitbucket pipelines),
-                    Docker, Openshift
-                </p>
-                <p className="developmentContentContainer">
-                    Test driven development and agile working methods.
-                </p>
-                <p className="developmentContentContainer">
-                    Used to working in large multilingual and multicultural teams.
-                </p>
-                <p className="developmentContentContainer">
-                    Communication : Backlog facilitation · Clear communication · Leading teams · Self starter · Cooperative supporter
-                </p>
-            </div>
-        );
-    }
+        for (let i = 0; i < 2; i++) {
+            cells.push(
+                <WorkExperienceCell
+                    key={i} title={"Title"}
+                    company={"Company"}
+                    location={"Location"}
+                    startDate={"Aug 2018"}
+                    endDate={"Present"}
+                    description={"Increased maintainability and efficiency of a confidential-customer-data-processing service written in Java by implementing a customized XML – parsing solution based on SAX (Simple API for XML), which cut down processing times by 2 - 3 seconds per patient data query as measured by company networking team during system stress tests."} />
+            );
+        }
 
-    function WorkExperience() {
-        return (
-            <div className="workExperienceContainer">
-                <h2 className="workExperienceHeader">INDUSTRY WORK EXPERIENCE</h2>
-            </div>
-        );
+        return cells;
     }
 
     return (
         <div className="resume">
             <div className="resumeLeftContainer-1">
-                <h1 className="mainTitle">Jony <br /> Oinas</h1>
-                <h3 className="secondTitle">Full-Stack <br /> Developer</h3>
+                <ResumeHeader />
             </div>
             <div className="resumeRightContainer-1">
                 <ContactInfoContainer />
@@ -68,7 +38,7 @@ const Resume = () => {
                 <SkillsContainer />
             </div>
             <div className="resumeRightContainer-2">
-                <WorkExperience />
+                <WorkExperience workExperienceCells={buildWorkExperienceCells()} />
             </div>
             <div className="resumeLeftContainer-3" />
             <div className="resumeRightContainer-3" />

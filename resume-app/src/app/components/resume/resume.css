@@ -1,3 +1,9 @@
+.resumeTitle {
+    display: flex;
+    flex-direction: row;
+    gap: var(--resume-grid-gap-size);
+}
+
 .mainTitle {
     font-size: var(--default-main-title-size);
     color: var(--default-font-color);

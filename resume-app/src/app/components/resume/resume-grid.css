@@ -19,7 +19,6 @@
     justify-content: flex-start;
     align-items: center;
     margin-left: var(--content-margin-from-edge);
-    gap: var(--resume-grid-gap-size);
 }
 
 .resumeRightContainer-1 {
