@@ -12,6 +12,7 @@ const Resume = () => {
                     <p><a href="https://bitbucket.org/Supersofty">bitbucket.org/Supersofty</a></p>
                     <p><a href="https://www.linkedin.com/in/jonyoinas/">linkedin.com/in/jonyoinas</a></p>
                 </div>
+                <br />
                 <div className="contactInfo">
                     <p>jonyoinas@gmail.com</p>
                     <p>(+358) 44 2000 189</p>
@@ -24,6 +25,7 @@ const Resume = () => {
         return (
             <div className="skillsContainer">
                 <h2 className="skillsHeader">SKILLS</h2>
+                <br />
                 <h3 className="developmentHeader">Development</h3>
                 <p className="developmentContentContainer">
                     Java, Javascript,  Maven,
@@ -45,6 +47,14 @@ const Resume = () => {
         );
     }
 
+    function WorkExperience() {
+        return (
+            <div className="workExperienceContainer">
+                <h2 className="workExperienceHeader">INDUSTRY WORK EXPERIENCE</h2>
+            </div>
+        );
+    }
+
     return (
         <div className="resume">
             <div className="resumeLeftContainer-1">
@@ -57,7 +67,9 @@ const Resume = () => {
             <div className="resumeLeftContainer-2">
                 <SkillsContainer />
             </div>
-            <div className="resumeRightContainer-2" />
+            <div className="resumeRightContainer-2">
+                <WorkExperience />
+            </div>
             <div className="resumeLeftContainer-3" />
             <div className="resumeRightContainer-3" />
             <div className="resumeLeftContainer-4" />

@@ -6,7 +6,7 @@
 .secondTitle {
     font-size: var(--default-secondary-title-size);
     color: var(--default-grey-font-color);
-    margin-top: 3rem;
+    margin-top: 3.7rem;
 }
 
 .contactInfoContainer {
@@ -32,4 +32,9 @@
     width: 16rem;
     color: var(--default-grey-font-color);
     margin-bottom: var(--default-section-bottom-margin);
+}
+
+.workExperienceHeader {
+    color: rgb(255, 123, 0);
+    font-weight: bolder;
 }
